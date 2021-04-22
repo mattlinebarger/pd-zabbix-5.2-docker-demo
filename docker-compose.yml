@@ -177,6 +177,7 @@ services:
   ports:
    - "8080:8080"
    - "8443:8443"
+   - "465:465"
   links:
    - mysql-server:mysql-server
    - zabbix-server:zabbix-server
@@ -227,6 +228,7 @@ services:
 
  zabbix-agent:
   container_name: pd-zabbix-agent
+  hostname: zabbix-agent001.grayowl.us
   image: zabbix/zabbix-agent:alpine-5.2-latest
   ports:
    - "10050:10050"
