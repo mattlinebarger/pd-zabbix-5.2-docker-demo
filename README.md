@@ -1,1 +1,1 @@
-# pd-zabbix-docker-demo
+# pd-zabbix-5.2-docker-demo
